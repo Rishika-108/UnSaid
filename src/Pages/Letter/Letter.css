@@ -253,3 +253,20 @@
   border-radius: var(--radius);
   display: inline-block;
 }
+.wl-nav {
+  display: flex;
+  gap: 15px;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+
+.wl-nav-link {
+  text-decoration: none;
+  color: #524A69;
+  font-weight: bold;
+}
+
+.wl-nav-link:hover {
+  color: #403652;
+}
+

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Letter.css'
 import React, { useState, useRef } from "react";
 export default function WriteLetterPage({ onSubmit }) {
@@ -77,6 +78,7 @@ export default function WriteLetterPage({ onSubmit }) {
 
   return (
     <main className="write-letter-page">
+  
       <header className="wl-header">
         <h1 className="wl-title">Write a Letter</h1>
         <p className="wl-intro">
@@ -86,6 +88,7 @@ export default function WriteLetterPage({ onSubmit }) {
       </header>
 
       <form className="wl-form" onSubmit={submitForm} aria-describedby="wl-privacy-note">
+        
         <label htmlFor="wl-textarea" className="wl-label">
           Your letter
         </label>
@@ -140,12 +143,19 @@ export default function WriteLetterPage({ onSubmit }) {
         <p id="wl-privacy-note" className="wl-privacy-note">
           <small>Submissions may be published after review.</small>
         </p>
+         
+      <nav className="wl-nav">
+        <Link to="/" className="wl-nav-link">Home</Link>
+        <Link to="/about" className="wl-nav-link">About</Link>
+      </nav>
 
         {errorMsg && <div className="wl-error" role="alert">{errorMsg}</div>}
         {status === "success" && (
           <div className="wl-success" role="status">
             Thank you — your anonymous letter has been received.
+            
           </div>
+          
         )}
       </form>
 
@@ -169,7 +179,9 @@ export default function WriteLetterPage({ onSubmit }) {
           <strong>💡 Tip:</strong> Keep the form visually calm and uncluttered —
           like writing in a private notebook.
         </div>
+        
       </aside>
+       
     </main>
   );
 }

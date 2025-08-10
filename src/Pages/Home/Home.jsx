@@ -225,6 +225,9 @@ const Home = () => {
             ✏️ Write a Letter
           </button>
         </div>
+         <center><button className="write-btn" onClick={() => window.location.href = "/about"}>
+            ✏️ About Us
+          </button></center>
       </div>
     </main>
   );
