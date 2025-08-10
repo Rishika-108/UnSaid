@@ -1,6 +1,6 @@
 
 
-```markdown
+
 # UnSaid – Anonymous Letter Sharing Website
 
 **UnSaid** is a minimalist and emotionally-driven web app where users can write and share anonymous letters — thoughts they’ve never said out loud.  
@@ -14,10 +14,9 @@ It’s designed with calm colors, large typography, and generous white space to 
 
 /project-folder
 │
-├── index.html         # Home / Browse Letters
-├── write.html         # Write a Letter (Page 2)
-├── about.html         # About / Mission (Page 3)
-├── bg.jpg             # Background image for pages
+├── Home         # Home / Browse Letters
+├── Letter         # Write a Letter (Page 2)
+├── About         # About / Mission (Page 3)
 └── README.md          # Project documentation
 
 ````
@@ -61,7 +60,7 @@ It’s designed with calm colors, large typography, and generous white space to 
 
 ## 🛠️ Technologies Used
 
-- **HTML5** – Structure and content.
+- **REACT+VITE** – Structure and content.
 - **CSS3** – Styling and responsive layout.
 - **(Optional)** JavaScript – For interactivity.
 - **Google Fonts** – Typography.
@@ -73,16 +72,6 @@ It’s designed with calm colors, large typography, and generous white space to 
 1. **Download or Clone the Repository**
    ```bash
    git clone https://github.com/yourusername/unsent.git
-````
-
-2. **Place Your Background Image**
-
-   * Save your chosen background image as `bg.jpg` in the same folder as your HTML files (or update the path in `background-image` in each HTML file).
-3. **Open in Browser**
-
-   * Open `index.html` in your preferred browser.
-
----
 
 ## 📜 License
 
@@ -94,24 +83,3 @@ This project is open source under the [MIT License](LICENSE).
 
 The project was inspired by the idea that everyone has something they wish they had said — a thank you, an apology, a confession.
 **UnSaid** gives those words a place to live.
-
-```
-
----
-
-If you want, I can also create a **Figma-style project preview image** and embed it into this README so it looks professional on GitHub. That would make your repository stand out a lot.  
-
-Do you want me to make that preview image?
-```
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
